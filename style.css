@@ -1,0 +1,254 @@
+body{
+    background-color: #0f0f0f;
+}
+
+/* NAVIGATION */
+header{
+    display: flex;
+    flex-direction:row;
+    justify-content: space-between;
+    align-items: center;
+    height: 70px;
+}
+.header_left{
+    display: flex;
+    align-items: center;
+}
+.menu{
+    margin-left: 15px;
+    border-radius: 50%;
+    height:40px;
+    width: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.menu:hover{
+    background-color: #272727;
+    cursor: pointer;
+}
+.logo{
+    width:140px;
+    height: 140px;
+}
+.header_search{
+    display: flex;
+    flex-direction: row;
+    justify-content:space-between;
+    align-items: center;
+}
+.header_search form{
+    height: 40px;
+    width: 580px;
+    display: flex;
+    border-radius: 20px;
+    background-color: #212121;
+    border: 1px solid #272727;
+    box-shadow: none;
+}
+.header_search input{
+    width: 500px;
+    padding: 5px;
+    background-color:#212121;
+    border-top-left-radius: 20px;
+    border-bottom-left-radius: 20px;
+
+}
+
+.search-mic{
+    margin-left: 10px;
+    height: 100%;
+    width: 40px;
+    display: flex;
+
+}
+.record_mic{
+    height: 50px;
+    width: 50px;
+    margin-left: 10px;
+    background-color:#212121;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.record_mic:hover{
+    background-color: #272727;
+    cursor: pointer;
+
+}
+
+.header-icons{
+    display: flex;
+    flex-direction: row;
+    margin-right: 50px;
+    justify-content: space-between;
+    align-items: center;
+}
+.nav_icons{
+    height: 30px;
+    width: 30px;
+    margin-left: 15px;
+    border-radius: 50%;
+    margin-right: 10px;
+    cursor: pointer;
+
+}
+.icon{
+    cursor: pointer;
+    height: 25px;
+    width: 25px;
+}
+.search{
+    justify-self: center;
+    align-self: center;
+}
+
+/* NAVIGATION/HEADER ENDS HERE */
+
+
+/* MAIN BODY STARTS */
+main{
+    height: calc(100vh-70px);
+    display: flex;
+    flex-direction: row;
+}
+
+/* SIDEBAR*/
+
+.sidebar{
+    height: 100%;
+    width: 100px;
+    background-color:#0f0f0f;
+    overflow-y: scroll;
+    border: none;
+    outline: none;
+    box-shadow: none;
+}
+
+.sidebar-categories{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    margin-top: 15px;
+    margin-bottom: 15px;
+    justify-content: center;
+    align-items: center;
+}
+.sidebar_buttons{
+    height: 30px;
+}
+.sidebar_container{
+    border-radius: 10px;
+}
+
+.sidebar-category{
+    display: flex;
+    align-items: center;
+    width: 80px;
+    height: 60px;
+    border-radius: 10px;
+    padding-top: 10px;
+    margin-left: 20px;
+
+}
+
+.sidebar-category:hover{
+    background-color: #212121;
+    cursor: pointer;
+}
+
+.sidebar::-webkit-scrollbar{
+    display: none;
+}
+
+/* SIDEBAR ENDS HERE */
+
+
+
+/* RECOMMENDATIONS*/
+
+.recommend span{
+    margin-left: 10px;
+    height: 100%;
+    width: 50px;
+    background-color: #212121;
+    border-radius: 8px;
+    padding: 5px 5px;
+    color: #ffffff;
+}
+
+.recommend span:hover{
+    background-color: #272727;
+    cursor: pointer;
+}
+
+/* RECOMMENDATIONS END HERE */
+
+
+/* VIDEOS */
+
+.videos{
+    background-color: #0f0f0f;
+    width: 100%;
+    height: 100%;
+    padding: 10px;
+    border-top: 1px solid #ddd;
+    overflow-y: scroll;
+}
+
+.videos-container{
+    margin-top: 50px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    border-radius: 20px;
+}
+
+.video{
+    width: 340px;
+    margin-right: 10px;
+    margin-bottom: 30px;
+    border-radius: 20px;
+}
+.video-thumbnail{
+    width: 100%;
+    height: 170px;
+    object-fit: cover;
+    border-radius: 20px;
+}
+
+.video-thumbnail img{
+    object-fit: cover;
+    height: 100%;
+    width: 100%;
+    border-radius: 20px;
+}
+
+.author img{
+    object-fit: cover;
+    border-radius: 50%;
+    height: 40px;
+    width: 40px;
+    margin-right: 10px;
+}
+
+.video-detail{
+    display: flex;
+    margin-top: 10px;
+}
+
+.title{
+    color:#ffffff;
+    line-height: 15px;
+    font-size: 14px;
+    margin-bottom: 6px;
+}
+
+
+.title a,span{
+    text-decoration: none;
+    color: rgb(96, 96, 96);
+    font-size: 14px;
+}
